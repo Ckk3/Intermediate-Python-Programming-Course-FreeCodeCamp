@@ -46,3 +46,27 @@ print(difference)
 # Symmetric Difference, same as difference but it returns the elements that are not common in both sets
 symetric_difference = set_a.symmetric_difference(set_b)
 print(symetric_difference)
+
+# Is subset, check if all the elements of one set are present in another set
+set_a = {1,2,3,4,5}
+set_b = {4,5}
+print(set_b.issubset(set_a))
+print(set_b.issuperset(set_a))
+print(set_a.issubset(set_b))
+print(set_a.issuperset(set_b))
+
+# To copy, use .copy() method
+set_a = {1,2,3,4,5}
+set_b = set_a.copy()
+print(set_b)
+print(set_a)
+set_b = set_a
+set_b.add(6)
+print(set_b)
+print(set_a)
+
+# Create a immutable set 
+
+my_set = frozenset([1,2,3,4,5])
+print(my_set)
+print(type(my_set))
